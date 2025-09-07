@@ -1,4 +1,4 @@
-```bash
+After trying this bullshid i coudlnt get it goiiiin```bash
 nmap -sV -sC 10.129.95.180 
 Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-02-03 08:17 CST
 Nmap scan report for 10.129.95.180
@@ -225,7 +225,7 @@ Potentially sensitive file content: LocalizedResourceName=@%SystemRoot%\system32
    ==========================================================
 ```
 
-After trying this bullshid i coudlnt get it goiiiin
+This did not work, lets try something else
 
 ```bash
   [+] Looking for AutoLogon credentials(T1012)
@@ -235,7 +235,7 @@ Some AutoLogon credentials were found!!
     DefaultPassword               :  Moneymakestheworldgoround! 
 ```
 
-Re reading the winpeas i see there are creds sat here, when you come back try bloodhound that shit 
+Re reading the winpeas i see there are creds sat here, when you come back try bloodhound  
 
 So after LOTS of trial and error, we figured out that sharphound can be put on the machine anmd ran that way simply by downloading and 
 
@@ -260,11 +260,9 @@ neo4j start
 
 then after entering neo4j password neo4j user
 
-we can run bloodhound and get started except there was a version bug so my files perma were at 0% upload so after 2 hours of getting this shit working i used a guide.
+we can run bloodhound and get started 
 
-their bloodhound found SVC account had :
-
-This account has access to `GetChanges` and `GetChangesAll` on the domain. Googling that will quickly point to a low of articles on the DCSync attack, or I can right click on the label (you have to get in just the right spot) and get the menu for it:
+This account has access to `GetChanges` and `GetChangesAll` on the domain. Googling that will quickly point to a load of articles on the DCSync attack, or I can right click on the label (you have to get in just the right spot) and get the menu for it:
 
 so lets run the impacket tool, if this doesnt work mimikatz can be used too 
 
