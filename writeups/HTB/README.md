@@ -1,7 +1,7 @@
 # HTB Writeups
 
-Store your CTF writeups for Hack The Box here.
+Here are the (Very rough) writeups from CTF challanges within HTB. These range from my first ever as a beginner to modern day. They were personal learning notes and are not the best written, more for my own notetaking.
 
 ## Instructions
 
-For each CTF, create a new Markdown file named after the challenge and add your writeup there.
+Some walkthroughs were used for some of these machines as I was still a beginner upon starting HTB
